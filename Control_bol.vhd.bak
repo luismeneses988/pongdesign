@@ -1,0 +1,57 @@
+----------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+----------------------------------------------------------------
+ENTITY  Control_bol IS
+	PORT	(	clk					:	IN		STD_LOGIC;
+				rst					:	IN		STD_LOGIC;
+				pos_pv_x				:	IN		STD_LOGIC_VECTOR(9 DOWNTO 0);
+				pos_pv_y				:	IN		STD_LOGIC_VECTOR(9 DOWNTO 0);
+				pos_sg_x				:	OUT   STD_LOGIC_VECTOR(9 DOWNTO 0);
+				pos_sg_y				:	OUT   STD_LOGIC_VECTOR(9 DOWNTO 0));
+END ENTITY Control_raq;
+----------------------------------------------------------------
+ARCHITECTURE fsm OF Control_bol IS
+	TYPE state IS (down_left,up_left,up_right,down_right);
+	SIGNAL pr_state, next_state	:	state;
+	SIGNAL pr_aux_x, nx_aux_x : INTEGER RANGE 640 DOWNTO 0;
+	SIGNAL pr_aux_y, nx_aux_y : INTEGER RANGE 480 DOWNTO 0;
+BEGIN
+
+	pr_aux_x <= CONV_INTEGER (pos_pv_x); 
+	pr_aux_y <= CONV_INTEGER (pos_pv_y);
+	
+	sequential: PROCESS(rst, clk)
+	BEGIN
+		IF (rst = '1') THEN
+			pr_state	<=	down_left;
+		ELSIF (rising_edge(clk)) THEN
+			pr_state	<=	next_state;
+		END IF;
+	END PROCESS sequential;
+
+	combinational: PROCESS(pr_state, pr_aux_x, pr_aux_y)
+	BEGIN
+		CASE pr_state IS
+			
+	WHEN down_left	=>
+				nx_aux_y<=pr_aux_y + 5;
+				nx_aux_x<=pr_aux_x - 5;
+				
+				 
+			
+	WHEN up_left	=>
+				nx_aux_y<=pr_aux_y - 5;
+				nx_aux_x<=pr_aux_x - 5;
+					
+	WHEN up_right	=>
+				nx_aux_y<=pr_aux_y - 5;
+				nx_aux_x<=pr_aux_x + 5;
+				
+	WHEN down_right	=>
+				nx_aux_y<=pr_aux_y + 5;
+				nx_aux_x<=pr_aux_x + 5;
+				
+		END CASE;
+	END PROCESS combinational;
+END ARCHITECTURE fsm;

@@ -1,0 +1,25 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+----------------------------------
+ENTITY Control IS
+	PORT    ( clk			: IN  STD_LOGIC;
+				 rst			: IN  STD_LOGIC;
+				 pt_a     	: IN STD_LOGIC;
+				 pt_b     	: IN STD_LOGIC;
+				 gameover 	: OUT	STD_LOGIC;
+				 puntoA		: OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+				 puntoB		: OUT STD_LOGIC_VECTOR(6 DOWNTO 0));
+
+END ENTITY;
+-------------------------------------------------------
+-------------------------------------------------------
+ARCHITECTURE rtl OF control IS 
+--SIGNAL bolay, bolax : STD_LOGIC_VECTOR(9 DOWNTO 0);
+--SIGNAL pos_reg1, pos_reg2 : STD_LOGIC_VECTOR(9 DOWNTO 0);
+--SIGNAL punto_a, punto_b : STD_LOGIC;
+
+BEGIN
+	
+ 
+END ARCHITECTURE;

@@ -1,0 +1,43 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;-
+----------------------------------
+ENTITY control_VGA IS
+	GENERIC ( N          : INTEGER  := 4);
+	PORT    ( clk        : IN  STD_LOGIC;
+				 rst        : IN  STD_LOGIC;
+				 gameover   : IN std_logic;
+				 vga_vs     : OUT STD_LOGIC;
+				 vga_hs     : OUT STD_LOGIC;
+				 vga_R      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0); 
+				 vga_G      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0); 
+				 vga_B      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+
+END ENTITY;
+-------------------------------------------------------
+-------------------------------------------------------
+ARCHITECTURE rtl OF control_VGA IS
+SIGNAL flg1, flg2 : STD_LOGIC; 
+SIGNAL cont_h, cont_v : STD_LOGIC_VECTOR(11 DOWNTO 0);
+
+BEGIN
+
+	horizontal: ENTITY work.univ_bin_counter
+			GENERIC MAP(	N	=> 12)
+			PORT MAP(	clk		=>	clk,
+							ena 		=> '1',
+							syn_clr	=> rst,
+							limit		=>	X"320", 	--800--
+							max_tick	=> flg1,
+							counter 	=> cont_h);
+							
+	vertical: ENTITY work.univ_bin_counter
+			GENERIC MAP(	N	=> 12)
+			PORT MAP(	clk		=>	clk,
+							ena 		=> flg1,
+							syn_clr	=> rst,
+							limit		=>	X"20D", 	--525--
+							max_tick	=> flg2,
+							counter 	=> cont_v);	 
+					 
+END ARCHITECTURE;

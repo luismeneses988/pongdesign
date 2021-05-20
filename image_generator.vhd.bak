@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity image_generator is
+Port (	horizontal 	: in STD_LOGIC_VECTOR (9 downto 0);
+			vertical 	: in std_logic_vector (9 downto 0);
+			ver 			: in std_logic; -- blank interval signal
+			clk 			: in std_logic; -- main clock
+			rst 			: in std_logic; -- global reset
+			R 				: out std_logic; -- Red colour signal
+			G 				: out std_logic; -- Green colour signal
+			B 				: out std_logic); -- Blue colour signal
+end image_generator;
+
+architecture Behavioral of image_generator is
+	SIGNAL hctr_int : integer range 799 downto 0;
+	SIGNAL vctr_int : integer range 524 downto 0;
+	SIGNAL R_int, G_int, B_int: std_logic;
+	SIGNAL color: std_logic_vector (2 downto 0);
+	
+BEGIN
+	hctr_int <= CONV_INTEGER (horizontal);
+	vctr_int <= CONV_INTEGER (vertical);
+---------------------------------------------	
+PROCESS (clk,reset,R_int,G_int,B_int)
+BEGIN
+	IF rst = '1' THEN
+		R <= '0';
+		G <= '0';
+		B <= '0';
+	ELSIF clk='1' AND clk'event THEN
+		R <= R_int;
+		G <= G_int;
+		B <= B_int;
+	END IF;
+END PROCESS;
+-----------------------------------------------------------------------------------
+color <= "111" when ((hctr_int >= 0) 	and (hctr_int < 100) and (ver = '1')) else
+			"001" when ((hctr_int >= 100) and (hctr_int < 150) and (ver = '1')) else
+			"010" when ((hctr_int >= 150) and (hctr_int < 200) and (ver = '1')) else
+			"011" when ((hctr_int >= 200) and (hctr_int < 250) and (ver = '1')) else
+			"100" when ((hctr_int >= 250) and (hctr_int < 300) and (ver = '1')) else
+			"101" when ((hctr_int >= 300) and (hctr_int < 350) and (ver = '1')) else
+			"110" when ((hctr_int >= 350) and (hctr_int < 400) and (ver = '1')) else
+			"111" when ((hctr_int >= 400) and (hctr_int < 450) and (ver = '1')) else
+			"100" when ((hctr_int >= 450) and (hctr_int < 500) and (ver = '1')) else
+			"110" when ((hctr_int >= 500) and (hctr_int <= 539) and (ver = '1')) else
+			"111" when ((hctr_int > 539) and (hctr_int <= 639) and (ver = '1')) else
+			"000"; -- Intérvalos blank (blank = 0)
+R_int <= color(2);
+G_int <= color(1);
+B_int <= color(0);
+end Behavioral;

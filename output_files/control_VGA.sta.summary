@@ -1,0 +1,389 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -6.717
+TNS   : -106.924
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.299
+TNS   : -1539.241
+
+Type  : Slow 1200mV 85C Model Setup 'control_VGA:Pantalla|clk_out'
+Slack : -2.159
+TNS   : -30.589
+
+Type  : Slow 1200mV 85C Model Setup 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -1.015
+TNS   : -9.557
+
+Type  : Slow 1200mV 85C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.962
+TNS   : -3.407
+
+Type  : Slow 1200mV 85C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -0.948
+TNS   : -3.401
+
+Type  : Slow 1200mV 85C Model Setup 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.653
+TNS   : -24.964
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -1.289
+TNS   : -26.590
+
+Type  : Slow 1200mV 85C Model Hold 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.559
+TNS   : -1.431
+
+Type  : Slow 1200mV 85C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.161
+TNS   : -0.641
+
+Type  : Slow 1200mV 85C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'control_VGA:Pantalla|clk_out'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -6.610
+TNS   : -125.238
+
+Type  : Slow 1200mV 85C Model Recovery 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -4.758
+TNS   : -4.758
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -3.764
+TNS   : -177.071
+
+Type  : Slow 1200mV 85C Model Recovery 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.078
+TNS   : -19.844
+
+Type  : Slow 1200mV 85C Model Removal 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.340
+TNS   : -0.711
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 1.207
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 2.882
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1598.624
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_VGA:Pantalla|clk_out'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -19.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -5.912
+TNS   : -93.622
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.597
+TNS   : -1307.147
+
+Type  : Slow 1200mV 0C Model Setup 'control_VGA:Pantalla|clk_out'
+Slack : -1.873
+TNS   : -25.664
+
+Type  : Slow 1200mV 0C Model Setup 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.872
+TNS   : -6.956
+
+Type  : Slow 1200mV 0C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.767
+TNS   : -2.655
+
+Type  : Slow 1200mV 0C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -0.754
+TNS   : -2.635
+
+Type  : Slow 1200mV 0C Model Setup 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.553
+TNS   : -23.653
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -1.218
+TNS   : -27.819
+
+Type  : Slow 1200mV 0C Model Hold 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.463
+TNS   : -1.291
+
+Type  : Slow 1200mV 0C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.110
+TNS   : -0.438
+
+Type  : Slow 1200mV 0C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'control_VGA:Pantalla|clk_out'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -5.833
+TNS   : -110.523
+
+Type  : Slow 1200mV 0C Model Recovery 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -4.185
+TNS   : -4.185
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -3.225
+TNS   : -151.729
+
+Type  : Slow 1200mV 0C Model Recovery 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.023
+TNS   : -18.865
+
+Type  : Slow 1200mV 0C Model Removal 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.254
+TNS   : -0.618
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 1.092
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 2.639
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1598.624
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_VGA:Pantalla|clk_out'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -19.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -3.385
+TNS   : -52.814
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.995
+TNS   : -377.141
+
+Type  : Fast 1200mV 0C Model Setup 'control_VGA:Pantalla|clk_out'
+Slack : -0.770
+TNS   : -9.153
+
+Type  : Fast 1200mV 0C Model Setup 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.377
+TNS   : -2.366
+
+Type  : Fast 1200mV 0C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.124
+TNS   : -0.234
+
+Type  : Fast 1200mV 0C Model Setup 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -0.052
+TNS   : -0.103
+
+Type  : Fast 1200mV 0C Model Setup 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -0.922
+TNS   : -13.816
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.803
+TNS   : -18.085
+
+Type  : Fast 1200mV 0C Model Hold 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.311
+TNS   : -0.971
+
+Type  : Fast 1200mV 0C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -0.060
+TNS   : -0.238
+
+Type  : Fast 1200mV 0C Model Hold 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'control_VGA:Pantalla|clk_out'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -3.316
+TNS   : -62.764
+
+Type  : Fast 1200mV 0C Model Recovery 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -2.260
+TNS   : -2.260
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.717
+TNS   : -77.902
+
+Type  : Fast 1200mV 0C Model Recovery 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -0.597
+TNS   : -10.936
+
+Type  : Fast 1200mV 0C Model Removal 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -0.161
+TNS   : -0.161
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.680
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : 1.641
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -891.785
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_VGA:Pantalla|clk_out'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -19.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Raquetas:Jugadores|univ_bin_counter:contador|temp[0]'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_left'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|Control_bol:mov_bola|pr_state.down_right'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state.st_2'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

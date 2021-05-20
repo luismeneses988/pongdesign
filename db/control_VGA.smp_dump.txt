@@ -1,0 +1,33 @@
+
+State Machine - |Pong|Pelota:Bola_mov|debounce:boton|debounce_FSM:FSM|pr_state
+Name pr_state.st_2 pr_state.st_1 pr_state.st_0 
+pr_state.st_0 0 0 0 
+pr_state.st_1 0 1 1 
+pr_state.st_2 1 0 1 
+
+State Machine - |Pong|Pelota:Bola_mov|Control_bol:mov_bola|pr_state
+Name pr_state.down_right pr_state.up_right pr_state.down_left pr_state.up_left 
+pr_state.up_left 0 0 0 0 
+pr_state.down_left 0 0 1 1 
+pr_state.up_right 0 1 0 1 
+pr_state.down_right 1 0 0 1 
+
+State Machine - |Pong|Raquetas:Jugadores|debounce:boton|debounce_FSM:FSM|pr_state
+Name pr_state.st_2 pr_state.st_1 pr_state.st_0 
+pr_state.st_0 0 0 0 
+pr_state.st_1 0 1 1 
+pr_state.st_2 1 0 1 
+
+State Machine - |Pong|Raquetas:Jugadores|Control_raq:control2|pr_state
+Name pr_state.s3 pr_state.s2 pr_state.s1 pr_state.s0 
+pr_state.s0 0 0 0 0 
+pr_state.s1 0 0 1 1 
+pr_state.s2 0 1 0 1 
+pr_state.s3 1 0 0 1 
+
+State Machine - |Pong|Raquetas:Jugadores|Control_raq:controll|pr_state
+Name pr_state.s3 pr_state.s2 pr_state.s1 pr_state.s0 
+pr_state.s0 0 0 0 0 
+pr_state.s1 0 0 1 1 
+pr_state.s2 0 1 0 1 
+pr_state.s3 1 0 0 1 
